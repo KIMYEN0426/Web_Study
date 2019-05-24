@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>기본적인 레이아웃</title>
+        <style>
+            .container{
+                border: 1px solid red;
+                width:1200px;
+                height:600px;
+                margin:0 auto;
+            }
+            header{
+                border: 1px solid orange;
+                background-color: tomato;
+                width: 1200px;
+                height:150px;
+                text-align:center;
+                line-height:150px;
+                font-size:24pt;
+            }
+        
+            .inner section{
+                border: 1px solid greenyellow;
+                width:400px;
+                height:250px;
+                box-sizing: border-box;
+                float:left;
+            }
+            footer{
+                border:1px solid skyblue;
+                width:1200px;
+                height:150px;
+                box-sizing: border-box;
+                clear:left;
+            }
+            nav{
+                background-color:orange;
+                width:1200px;
+                height:50px;
+                box-sizing: border-box;
+                float:left;
+            }
+            li{
+                display:inline;
+            }
+            a:link{
+                text-decoration: none;
+                color:black;
+            }
+            a:visited{
+                text-decoration: none;
+                color:black;
+            }
+            a:hover{
+                text-decoration:none;
+                color:black;
+            }
+            a:active{
+                text-decoration: none;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header><b>Hot movie</b></header>
+            <nav>
+                <ul>
+                    <li><a href="#">열혈사제</a></li>
+                    <li><a href="#">걸캅스</a></li>
+                    <li><a href="#">아이언맨</a></li>
+                </ul>
+            </nav>
+            <div class="inner">
+                <section>section1</section>
+                <section>section2</section>
+                <section>section3</section>
+            </div>
+            <footer>
+                <address>Copyright by k, Seoul, korea</address>
+            </footer>
+        </div>
+    </body>
+</html>
