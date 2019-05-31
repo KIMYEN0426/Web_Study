@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #parent{
+                position:relative;
+            }
+            #child{
+                display:none;
+                background-color:pink;
+            }
+            .top{
+                width:150px;    
+                height:50px;
+                text-align: center;
+                line-height:50px;
+                background-color:gray;
+                
+            }
+            .menu{
+                width:100px;
+                height:40px;
+                text-align: center;
+                line-height:40px;
+                background-color:pink;
+            }
+            #parent:hover #child{
+                display:block;
+                position:absolute;
+                left:25px;
+                top:40px;
+            }   
+            #child .menu:hover{
+                background-color:hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div class="top">메뉴항목</div>
+            <div id="child">
+                <div class="menu">서브 메뉴1</div>
+                <div class="menu">서브 메뉴2</div>
+                <div class="menu">서브 메뉴3</div>
+            </div>
+        </div>
+    </body>
+</html>
