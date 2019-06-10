@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                border:none;
+                width:85%;
+                height:200px;
+                border-collapse: collapse;
+                font-family:'monospace';
+                font-style:bold;
+                margin:20px;
+            }
+            table td{
+                padding:5px;
+            }
+            #font_color{
+                color:white;
+            }
+            #bt{
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST">
+        <table border align="center">
+            <caption><b>회원가입</b></caption>
+            <cologroup>
+                <col bgcolor=#3366cc>
+                <col bgcolor=#ffffff>
+                <col bgcolor=#3366cc>
+                <col bgcolor=#ffffff>
+            </cologroup>
+            <tr>
+                <td id="font_color">이름</td>
+                <td><input type="text" size="10" name="name"></td>
+                <td id="font_color">생년월일</td>
+                <td><input type="text" size="10" name="birth"></td>
+            </tr>
+            <tr>
+                <td id="font_color">아이디</td>
+                <td><input type="text" size="10" name="id"></td>
+                <td id="font_color">비밀번호</td>
+                <td><input type="password" size="10" name="password"></td>
+            </tr>
+            <tr>
+                <td id="font_color">이메일</td>
+                <td><input type="email"size="20"name="email" placeholder="id@naver.com"></td>
+                <td id="font_color">비밀번호 확인</td>
+                <td><input type="password" size="10" name="password_again"></td>
+            </tr>
+            <tr>
+                <td id="font_color">주소</td>
+                <td><select name="area">
+                    <option value="Seoul">서울특별시</option>
+                    <option value="Goyang">경기도 고양시</option>
+                    <option value="Incheon">인천광역시</option>
+                    <option value="Busan">부산광역시</option>
+                    <option value="Deagu">대구광역시</option>
+                </select>
+                    <input type="text" size="15" name="detail_address" placeholder="상세주소">
+                </td>
+                <td id="font_color">성별</td>
+                <td><input type="radio" name="sex">Male
+                    <input type="radio" name="sex">Female
+                </td>
+            </tr>
+            <tr>
+                <td id="font_color">연락처</td>
+                <td><input type="text" size="10"></td>
+                <td id="font_color">정보수신</td>
+                <td><input type="checkbox" name="info">이메일
+                    <input type="checkbox" name="info">SMS
+                </td>
+            </tr>
+        </table>
+        <input type="reset" value="취소" id="bt">
+        <input type="submit" value="등록" id="bt">
+    </form>
+    </body>
+</html>

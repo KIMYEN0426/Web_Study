@@ -5,24 +5,24 @@
         <style>
             #header{
                 width: 100%;
-                height:150px;
+                height:100px;
             }
             #menu{
                 width: 20%;
-                height:400px;
+                height:430px;
                 background-color:#cce6ff;
                 display:inline-block;
                 float:left;
             }
             #menu div{
-                width:250px;
+                width:253px;
                 height:50px;
                 line-height:50px;
                 text-align: center;
             }
             #content{
                 width: 60%;
-                height:400px;
+                height:430px;
                 background-color:white;
                 display:inline-block;
                 box-sizing:border-box;
@@ -30,7 +30,7 @@
             }
             #asid{
                 width:20%;
-                height:400px;
+                height:430px;
                 background-color:#4da9ff;
                 display:inline-block;
                 box-sizing:border-box;
@@ -38,7 +38,7 @@
             }
             #footer{
                 width:100%;
-                height:100px;
+                height:70px;
                 background-color:skyblue;
                 display:inline-block;
                 box-sizing:border-box;
@@ -46,9 +46,28 @@
             }
             a:link{
                 text-decoration: none;
-                color:blue;
+                color:black;
             }
-
+            a:visited{
+                text-decoration:none;
+                color:black;
+            }
+            a:hover {
+                text-decoration: none;
+                color:black;
+            }
+            #menu div:hover{
+                background-color:white;
+            }
+            a:active{
+                text-decoration: none;
+                color:black;
+            }
+            #menu{
+                position:relative;
+            }
+           
+           
         </style>
 
     </head>
@@ -58,21 +77,26 @@
                 <img src="image/logo.png" width="200px" height="80px" align="center">
             </div>
             <div id="menu">
-                <div id="joinus"><a href="#">회원가입</a></div>
-                <div id="BTS"><a href="#">BTS</a></div>
-                <div id="TXT"><a href="#">TXT</a></div>
-                <div id="MD"><a href="#">MD</a></div>
+
+                <div id="joinus"><a href="JoinUs.html" target="content"><b>Join Us</b></a></div>
+                <!--<div class="bts_menu"><a href="BTS_MD.html" target="content"><b>MD</b></a></div>-->
+                <div id="BTS"><a href="BTS.html" target="content"><b>BTS</b></a></div>
+                <div id="TXT"><a href="TXT.html" target="content"><b>TXT</b></a></div>
+                <div id="MD"><a href="MD.html" target="content"><b>MD</b></a></div>
+                <div id="Album"><a href="Album.html" target="content"><b>Album</b></a></div>
+
             </div>
             <div id="content">
-                <iframe></iframe>
+                <iframe src="Content.html" width="100%" height="430" frameborder="0" scrolling="no" name="content"></iframe>
             </div>
             <div id="asid">
-
+                
             </div>
             <div id="footer">
 
-            </div>   
-        </div>
+            </div>
+
+        </div><!--메뉴 끝 div-->
     </body>
 
 </html>
