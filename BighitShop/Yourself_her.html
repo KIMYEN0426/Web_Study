@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                display:inline-block;
+                margin:5px;
+                float:left;
+            }
+            #info{
+                width:400px;
+                height:430px;
+            }
+            #shipping_fare{
+                font-size:8pt;
+            }
+            table{
+                width:350px;
+                height:400px;
+            }
+            #btn{
+                width:150px;
+                height:30px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <img src = "image/LOVE YOURSEFF HER ALBUM.jpg" width="350" height="430">
+        </div>
+        <div id="info">
+            LOVE YOURSELF 轉 'Her'
+            <hr style="width:100%">
+            <table>
+                <tr>
+                    <td>price</td>
+                    <td><b>₩14,900</b> ($12.90)</td>
+                </tr>
+                <tr>
+                    <td>shipping</td>
+                    <td> 
+                        <select name="shipping">
+                            <option>국내(Domestic)(Billing on orders)</option>
+                            <option>해외(Overseas)(Billing on orders)</option>
+                        </select>
+                        <p id="shipping_fare">₩3,000 (30,000 ₩ and more Free Shipping) <br>
+                        추가배송비 : ₩3,000~₩5,000 (By regional)</p>
+                     </td>
+                </tr>
+                <tr>
+                    <td>Earn Point</td>
+                    <td>149P</td>
+                </tr>
+                <tr>
+                    <td>Option</td>
+                    <td>Please select product option
+                        <select name="version">
+                            <option>-version select-</option>
+                            <option>L</option>
+                            <option>O</option>
+                            <option>V</option>
+                            <option>E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qty</td>
+                    <td><input type="number" value="0" min="0" max="10" step="1"></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><b>₩14,900</b>   ($12.90)</td>
+                </tr>
+            </table>
+            <input type="button" name="cart" value="add to cart" id="btn">
+            <input type="button" name="buy_now" value="buy now" id="btn">
+        </div>
+    </body>
+</html>
