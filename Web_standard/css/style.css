@@ -152,6 +152,36 @@
 .notice_over2 li a span strong{}
 .notice_over2 li a span:hover em{visibility: visible;}
 
+/*탭 메뉴*/
+.tab_menu{position:relative;border:1px solid #ccc; padding:8px;height: 105px;}
+.tab_menu h4{}
+.tab_menu ul{overflow:hidden;border-bottom:1px solid #ccc;}
+.tab_menu ul li{float:left;border:1px solid #ccc;margin-right:-1px;margin-bottom:-1px;}
+.tab_menu ul li a{padding:5px;display:block;}
+.tab_menu ul li ul{position: absolute;left:10px;top:50px;width: 270px;border:0;}
+.tab_menu ul li ul li{border:0;background:url("../img/dot.gif") no-repeat 9px 8px; padding-left:18px;float:none;}
+.tab_menu ul li ul li a{overflow:hidden;text-overflow: ellipsis;white-space: nowrap;border:none;font-size: 12px;padding: 0 0 3px 0; width:100%;}
+.tab_menu ul li.active{background:#2c94c4;}
+.tab_menu ul li.active a{color:#fff;}
+.tab_menu ul li.active ul li a{color:#333;}
+/*컨텐츠 요소가 안보이게 하는 방법*/
+/*
+    1. display:none ----- display:block; //영역이 사라짐
+    2. visibility:hidden ---- visibility:visible; //영역은 남아있는데 내용이 없어짐
+    3. opacity:0 ---- opacity:1
+    4. width:0 , height:0              */
+
+/*게시판 4*/
+.notice4{}
+.notice4 h4{}
+.notice4 h3 em{}
+.notice4 ul{}
+.notice4 ul li{}
+.notice4 ul li a{}
+.notice4 ul li a span{}
+.notice4 a.more{}
+
+
 
 
 
