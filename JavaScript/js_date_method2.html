@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+        <h3>페이지 방문 초시간이 짝수이면 violet, 홀수이면 lightskyblue 배경</h3>
+        <script>
+            var now = new Date();
+            var second = (now.getSeconds());
+            document.write(now.getHours()+"시");
+            document.write(now.getMinutes()+"분");
+            document.write(now.getSeconds()+"초");
+            if(second%2==0){
+                document.body.style.background='violet';
+            }else{
+                document.body.style.background='lightskyblue';
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        </style>
+        <script>
+            function init(){
+                //2. addEventListener 사용
+                var p2 = document.getElementById("p2");
+                p2.addEventListener('mouseover',over);
+            }
+            // p.addEventListener('mouseover',function(){
+                //익명함수
+            // });
+            //p.onmouseover=function(){};//익명함수
+            function over(){
+                p2.style.backgroundColor='hotpink';
+            }
+        </script>
+    </head>
+    <Body onload=init()>
+        <p id="p" onmouseover=this.style.backgroundColor='pink' onmouseout=this.style.background='white'>마우스 올리면 배경색 바뀌는 이벤트 발생</p>
+        <p id="p2">마우스 올리면 배경색 바뀌는 이벤트 발생</p>
+    </Body>
+</html>

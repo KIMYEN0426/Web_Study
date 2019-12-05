@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <script>
+            var degree = new Array();
+            var sum=0;
+            for(var i = 0; i<5; i++){
+                degree[i] = parseInt(prompt('숫자 5개를 입력해주세요'));
+            }
+            for(var i = 0; i<degree.length; i++){
+                sum += degree[i];
+            }
+            document.write("평균온도:"+sum/5);
+        </script>
+    </body>
+</html>

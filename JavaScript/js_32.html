@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+        
+    </head>
+    <body>
+        <h3>두 수의 합</h3>
+        <hr>
+        <input type = "text" name = "a">
+        <input type= "text" name ="b">
+        <input type="button" onclick="calc()" value="계산">
+        <script>
+            function calc(){
+                 var a = document.getElementById("a").value;
+                 var b = document.getElementById("b").value;
+                 document.write(parseInt(a) + parseInt(b));
+            }
+         </script>
+
+        <!--break: 가장 가까운 반복문을 빠져 나가는 것
+        continue : 실행하지 않고 다음 증감으로 가는 것-->
+    </body>
+</html>

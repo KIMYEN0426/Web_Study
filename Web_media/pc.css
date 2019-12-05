@@ -1,0 +1,4 @@
+body{background-color:orange;position: relative;}
+.center{background:purple;width:500px;height: 100%;}
+.left{background:skyblue;width:100px;position:absolute;top:0;height: 100%;}
+.right{background:yellow;width:100px;position:absolute;top:0;height: 100%;}

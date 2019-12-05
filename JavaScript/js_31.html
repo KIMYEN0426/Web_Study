@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h3>document.write()로 테이블 만들기</h3>
+        <hr>
+        <script>
+           
+                document.write("<table border> <tr> <td>n</td>");
+                for(var i=1; i<=9;i++){
+                    document.write("<td>"+i+"</td>");
+                }
+                document.write("</tr>");
+                document.write("<tr><td>n^2</td>");
+                for(var i=1; i<=9;i++){
+                    document.write("<td>"+i*i+"</td>");
+                }
+                document.write("</tr> </table>");
+        </script>
+
+        <!--break: 가장 가까운 반복문을 빠져 나가는 것
+        continue : 실행하지 않고 다음 증감으로 가는 것-->
+    </body>
+</html>

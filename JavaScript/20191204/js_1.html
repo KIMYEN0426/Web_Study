@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>context메뉴</title>
+    <style>
+        #btn {
+            width: 100px;
+            height: 30px;
+            display: block;
+            margin: 25px;
+            background-color: cadetblue;
+            border: none;
+            color: white;
+        }
+    </style>
+    <script>
+        // function hide(){
+        //     alert('오른쪽 메뉴 금지');
+        //     return false;
+        // }
+        // document.oncontextmenu=hide;
+        function change() {
+            var id = document.getElementById("myimg");
+            id.src = "../imge/apple.jpg";
+            alert(id.width + "," + id.height);
+        }
+    </script>
+</head>
+
+<body>
+    <!--onload="alert('2019.12.4 이후로 http;//www.abc.com로 이전됩니다.')-->
+    <!-- <h3>오른쪽 마우스 금지</h3> -->
+    <img src="../imge/Lion3.JPG" id="myimg" width="150px" height="150px">
+    <input type="button" name="btn" id="btn" value="클릭" onclick="change()">
+</body>
+
+</html>

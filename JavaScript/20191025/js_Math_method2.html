@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math 메소드</title>
+    </head>
+    <body>
+        <h3>구구단</h3>
+        <script>
+            var rand;
+            var rand1 = randomInt();
+            var rand2 = randomInt();
+
+            function randomInt(){
+                return Math.floor(Math.random()*9)+1;
+            }
+
+            var input = prompt(rand1+"*"+rand2+"값은 얼마?");
+
+            if(input == (rand1*rand2)){
+                document.write("정답입니다");
+            }else{
+                document.write("틀렸습니다");
+            }
+        </script>
+    </body>
+</html>

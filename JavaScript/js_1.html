@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1. js 삽입위치(이벤트리스너에 삽입)</title>
+        <style>
+            img{
+                width:500px;
+                height: 500px;
+                border:5px solid brown;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <img src="imge/Lion5.JPG" onclick="alert('lion hello');"> -->
+        <img src="imge/Lion5.JPG" onmouseover="this.src='imge/lion3.jpg';" onmouseout="this.src='imge/lion5.jpg';">
+
+    </body>
+</html>

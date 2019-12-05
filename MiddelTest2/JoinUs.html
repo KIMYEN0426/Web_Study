@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>회원가입 폼</title>
+        <style>
+            .a{
+                background-color:yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <table border>
+            <caption> <h3>회원가입</h3></caption>
+            <colgroup>
+                <col bgcolor="#cce6ff">
+            </colgroup>
+            <tr>
+                <td class ="a">아이디</td>
+                <td><input type="text" name="user_id"><input type="button" name="doublecheck" value="중복확인"></td>
+            </tr>
+            <tr>
+                <td class ="a">이름</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td class ="a">성별</td>
+                <td> 
+                    <input type="radio" name="gender" value="male" />남성
+                    <input type="radio" name="gender" value="female"/>여성
+                </td>
+            </tr>
+            <tr>
+                <td class ="a">암호</td>
+                <td><input type="password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td class ="a">암호확인</td>
+                <td><input type="password" name="rpwd"><-같은 암호를 입력하세요</td>
+            </tr>
+            <tr>
+                <td class ="a">이메일</td>
+                <td>
+                        <input type="email" name="mail"> @ <input type="email" name="mail">
+                        <select name="sel">
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="google.com">google.com</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td class ="a">주소</td>
+                <td><input type="text" name="address">&nbsp;<input type="button" name="add" value="주소찾기"></td>
+            </tr>
+            <tr>
+                <td class ="a">휴대폰</td>
+                <td>
+                    <input type="radio" name="telecom" value="SKT" >SKT
+                    <input type="radio" name="telecom" value="SKT" >KT
+                    <input type="radio" name="telecom" value="SKT">LG U+<br>
+                    <select name="num">
+                        <option value="010">010</option>
+                        <option value="070">070</option>
+                        <option value="016">016</option>
+                    </select>
+                    - <input type="text" name="sn" size="4"> - <input type="text" name="tn" size="4">
+                </td>
+            </tr>
+            <tr>
+                <td class ="a">관심</td>
+                <td><input type="checkbox" name="hobby">쇼핑
+                <input type="checkbox" name="hobby">게임
+                <input type="checkbox" name="hobby">여행
+                <input type="checkbox" name="hobby">기타</td>
+            </tr>
+            <tr>
+                <td  class ="a">자기소개</td>
+                <td><textarea  rows="10" cols="70" name="txt">
+                </textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align = "center" bgcolor="white"><input type="submit" name="sb" value="확인">
+                <input type="reset" name="rs" value="다시입력"></td>
+            </tr>
+        </table>
+    </body>
+</html>

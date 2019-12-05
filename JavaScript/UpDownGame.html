@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h3>숫자 맞추기</h3>
+        
+        <p>이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다.<br>
+            숫자는 1부터 100사이에 있습니다.
+        </p>
+        <form method="post" action="#">
+            숫자:<input type="text" id="x" name="num">
+            <input type="button" value="확인" onclick="guess()">
+            추측횟수:<input type="text" id="y" name="cnt">
+            힌트:<input type="text" id="sum">
+        </form> 
+        <script>
+            var cnt=0;
+           function guess(){
+             var compu_value = 53;
+             var input_value = document.getElementById("x").value;
+             document.getElementById("y").value=++cnt;
+             for(i = 1; i<=5; i++){
+                 if(input_value>compu_value){
+                     document.getElementById("sum").value="큽니다";
+                 }else if(input_value<compu_value){
+                     document.getElementById("sum").value="작습니다";
+                 }else if(input_value==compu_value){
+                     document.getElementById("sum").value="정답입니다";
+                 }
+             }
+                if(cnt>5){
+                    document.getElementById("sum").value="횟수를 초과하셨습니다.";
+                }
+           }
+        </script>
+
+        <!--break: 가장 가까운 반복문을 빠져 나가는 것
+        continue : 실행하지 않고 다음 증감으로 가는 것-->
+    </body>
+</html>

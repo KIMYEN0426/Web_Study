@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function compute(){
+                var num = document.getElementById('txt').value;
+                var result = eval(num);
+                document.getElementById('result').value=result;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>onclick, 계산기 만들기</h3>
+        <hr>
+        식<input type="text" id="txt"><br>
+        값<input type="text" id="result">
+        <button onclick="compute()">계산</button>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>confirm</title>
+    </head>
+    <body>
+        <script>
+            // document.write("<h1>Welcome!</h1><br>");
+            // document.write("<h2>3 + 5 =</h2><br>");
+            // document.write("<h3>8입니다.</h3>");
+            var uid = confirm("종료하시겠습니까?");
+            if(uid==true){
+                alert("경고창입니다");
+               document.write("종료되었습니다.");
+            }
+            else if(uid==false){
+                document.write("종료 취소!");
+            }
+            
+        </script>
+    </body>
+</html>

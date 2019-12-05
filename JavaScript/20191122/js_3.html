@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function down(span){
+                span.style.color="black";
+            }
+            function up(span){
+                span.style.color="red";
+            }
+            function over(span){
+                span.style.fontSize="24px";
+            }
+            function wheel(e, obj){
+                if(e.wheelDelta<0){console.log("아래로 구름");}
+                else{
+                    console.log("위로 구름");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>마우스 관련 이벤트 리스너</h3>
+        <hr>
+       <div>마우스 관련
+           <span onmousedown="down(this)" onmouseup="up(this)" onmouseover="over(this)"
+                 onwheel="wheel(event, this)">이벤트</span>
+            가 발생합니다.
+       </div>
+    </body>
+</html>

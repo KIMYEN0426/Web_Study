@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                width:200px;
+                height:70px;
+                background:lavender;
+                margin:30px;
+                line-height:70px; /*line-height값과 height 값을 같게 해주어야 중앙에 위치*/
+                text-align:center;  /*가로에서의 가운데 정렬*/
+                display:inline-block;
+            }
+            #b1{
+                box-shadow:10px 10px gray;
+            }
+            #b2{
+                box-shadow: 5px 5px gray;
+            }
+            #b3{
+                box-shadow: -5px 5px gray;
+            }
+            #b4{
+                box-shadow: 5px -5px gray;
+            }
+            #b5{
+                box-shadow: -5px -5px gray;
+            }
+            #b6{
+                box-shadow: 5px 5px violet;
+            }
+            #b7{
+                box-shadow: 3px 3px 7px gray;
+            }
+            #b8{
+                box-shadow: 5px 5px 10px pink;
+            }
+            #b9{
+                box-shadow: 5px 5px 10px gray,
+                            10px 10px 15px violet,
+                            15px 15px 20px blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>그림자 박스</h3>
+
+        <div id="b1">그림자 박스(기본)</div>
+        <div id="b2">그림자 박스(기본:우하)</div>
+        <div id="b3">그림자 박스(방향:좌하)</div>
+        <div id="b4">그림자 박스(방향:우상)</div>
+        <div id="b5">그림자 박스(방향:좌상)</div>
+        <div id="b6">그림자 박스(색상지정)</div>
+        <div id="b7">그림자 박스(번짐지정)</div>
+        <div id="b8">그림자 박스(생상/번짐)</div>
+        <div id="b9">그림자 박스(다중그림자)</div>
+
+    </body>
+</html>

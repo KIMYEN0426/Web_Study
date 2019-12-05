@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*pc버전*/
+        .wrap{margin:0 auto; width:1000px;}
+        .center{background:purple;width:100%;height: 400px;}
+        .left{background:skyblue;float:left;width:50%;height: 250px;}
+        .right{background:yellow;float:left;width:50%;height: 250px;}
+
+        @media (min-width:901px){ /*pc버전*/
+            body{background-color:orange;}
+            .wrap{margin:auto; width:100%;}
+        }
+        @media (min-width:701px) and (max-width: 900px){/*notebook버전*/
+            body{background-color:blue;}
+            .wrap{margin:auto; width:100%;}
+        }
+        @media (min-width:501px) and (max-width: 700px){/*tablet버전*/
+            body{background-color:green;}
+            .wrap{margin:auto; width:100%;}
+            .left{height: 350px;}
+            .right{height: 350px;}
+        }
+        @media (min-width:0) and (max-width: 500px) {/*mobile버전*/
+            body{background-color:red;}
+            .wrap{margin:auto; width:100%;}
+            .left{float:none;width:100%;} /*float:none == clear:both*/
+            .right{float:none;width:100%;}
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="center">
+
+            </div>
+            <div class="left">
+                
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </body>
+</html>

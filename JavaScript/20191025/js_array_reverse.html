@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math 메소드</title>
+    </head>
+    <body>
+        <h3>prompt함수로 5개의 정수 입력받아 배열에 저장하고 반대순으로 출력</h3>
+        <script>
+            var arr = new Array();
+            var temp;
+
+            for(i=0;i<5;i++){
+                arr[i]=prompt("5개의 정수를 입력하세요");
+            }
+            document.write("<hr>입력된 수의 배열<br>");
+            for(i=0;i<5;i++){
+                document.writeln(arr[i]);            
+            }
+            document.write("<hr>역순으로 정렬된 배열<br>");
+            for(i=4;i>=0;i--){
+                document.writeln(arr[i]);            
+            }
+            document.write("<br>");
+            document.write(arr.reverse());
+
+        </script>
+    </body>
+</html>

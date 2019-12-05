@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+        <h3>일요일이면 오렌지 오후면 아무색</h3>
+        <hr>
+        <script>
+            var now = new Date();
+            var day = now.getDay();
+            var day2;
+            
+            if(day==0){
+                document.body.style.background='orange';
+            }else{
+                document.body.style.background='salmon';
+            }
+            switch(day){
+                case 0: day2 = "일요일"; break;
+                case 1: day2 = "월요일"; break;
+                case 2: day2 = "화요일"; break;
+                case 3: day2 = "수요일"; break;
+                case 4: day2 = "목요일"; break;
+                case 5: day2 = "금요일"; break;
+                case 6: day2 = "토요일";
+            }
+            document.write(day2);
+        </script>
+    </body>
+</html>

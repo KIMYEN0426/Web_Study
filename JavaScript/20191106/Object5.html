@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>책</h3>
+        <hr>
+        <script>
+            //리터럴
+            var book={
+                'title':'어린왕자',
+                'author':'김예은',
+                price:3000,
+                read:function(){
+                    document.write("책을 읽는다<br>");
+                },
+                buy:function(){
+                    document.write("책을 산다<br>");
+                }
+            }
+
+            //프로토타입
+            function Book(title, author, price){
+                this.title = title;
+                this.author = author;
+                this.price = price;
+                this.read = function(){
+                    document.write("책을 읽는다<br>");
+                }
+                this.buy = function(){
+                    document.write("책을 산다<br>");
+                }
+            }
+
+            //object
+            //1번과 같은 방식
+            var book2 = new Object();
+            book2.title = "해리포터";
+            book2.author = "롤링언니"
+            book2.price = 100000;
+            book2.read = function(){
+                document.write("책을 읽는다<br>");
+            }
+            book2.buy = function(){
+                document.write("책을 산다<br>");
+            }
+
+            var book3 = new Book("누가 내 머리에 똥 쌌어?", "몰라", 3000);
+
+
+            //리터럴 방식 호출
+            document.write("책 제목 : "+book.title+"<br>저자 : "+book.author+"<br>가격 : "+book.price+"원<br>");
+            book.read();
+            book.buy();
+            document.write("<hr>");
+
+            //프로토타입 호출
+            document.write("책 제목 : "+book3.title+"<br>저자 : "+book3.author+"<br>가격 : "+book3.price+"원<br>");
+            book3.read();
+            book3.buy();
+            document.write("<hr>");
+
+            //Object 방식 호출
+            document.write("책 제목 : "+book2.title+"<br>저자 : "+book2.author+"<br>가격 : "+book2.price+"원<br>");
+            book2.read();
+            book2.buy();
+            document.write("<hr>");
+
+        </script>
+    </body>
+</html>

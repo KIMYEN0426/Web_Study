@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>자동차</h3>
+        <hr>
+        <script>
+            var car={
+                'model':'santape',
+                speed:100,
+                'color':'red',
+                brake:function(){
+                    return this.speed-=10;
+                },
+                accel:function(){
+                    return this.speed+=10;
+                }
+            }
+
+            function Car(model, speed, color){
+                this.model = model;
+                this.speed = speed;
+                this.color = color;
+                this.brake = function(){
+                    return speed-=10;
+                }
+                this.accel = function(){
+                    return speed+=10;
+                }
+            }
+
+            var car2 = new Car('sonata',80,'black');
+            
+
+            document.write(car.model+"의 속력 : "+car.speed + "<br>");
+            document.write(car2.model+"의 속력 : "+car2.brake());
+
+        </script>
+    </body>
+</html>

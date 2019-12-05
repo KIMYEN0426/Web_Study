@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function change(){
+                var count = document.getElementsByTagName("span");
+                for(var i=0; i<count.length; i++){
+                    count[i].style.color="orange";
+                    count[i].style.fontSize="24px";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>동백꽃 필 무렵</h3>
+        <input type="button" value="누르세요" onclick="change()">
+        <hr>
+        <div>
+            동백은 <span>용식에게</span> 까불이 잡을 때까지만 필구(김강훈 분)를<br>
+            <span>강종렬(김지석 분)</span>에게 밭기겠다고 털어놨다.<br>
+            용식은 "빨리 까불이 쳐 넣고 <span>필구</span> 컴백하게 하겠다"고 약속했다.<br>
+            필구는 동백과 쿨하게 헤어졌지만 <span>강종렬</span>의 차안에서 눈물을 터트렸다.
+        </div>
+        
+    </body>
+</html>

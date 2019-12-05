@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+         function createDIV(){
+             var bodyid = document.getElementById("parent");
+             var newDiv = document.createElement("div");
+             newDiv.innerHTML="새로 생성된 div태그 입니다.";
+             newDiv.setAttribute("id","myDiv");
+             newDiv.style.color="red";
+             bodyid.appendChild(newDiv);
+             newDiv.onclick = function(){
+                 var p = this.parentElement;
+                 p.removeChild(this);
+             }
+         }
+        </script>
+    </head>
+    <Body id="parent">
+        <h3>DIV 객체를 동적으로 생성, 삽입, 삭제하는 예제</h3>
+        <hr>
+        <p>DOM 트리에 동적으로 객체를 삽입할 수 있습니다.
+           createElement(), appendChild(),
+           removeChild() 메소드를 이용하여 새로운 객체를 생성,
+           삽입, 삭제하는 예제입니다.
+        </p>
+        <p><a href="javascript:createDIV()">DIV 생성</a></p>
+    </Body>
+</html>

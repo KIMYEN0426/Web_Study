@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>산술연산</title>
+    </head>
+    <body>
+        <h2>산술연산</h2><hr>
+        점수 : <input type="text" name="score" id="score">
+        <input type="button" value="계산" onclick="calc()">
+        <script>
+            function calc(){
+                var score = document.getElementById("score").value;
+                var iscore=Math.floor(parseInt(score));
+                var grade;
+                switch(Math.floor(iscore/10)){
+                    case 10: case 9: grade="A"; break;
+                    case 8: grade="B"; break;
+                    case 7: grade="C"; break;
+                    case 6: grade="D"; break;
+                    default: grade="E"; break;
+                }
+                document.write(grade);
+            }
+        </script>
+    </body>
+</html>

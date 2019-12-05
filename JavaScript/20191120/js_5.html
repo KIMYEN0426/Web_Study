@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          #body{
+            border:1px solid gray;
+            width: 170px;
+            padding:10px;
+          }
+          #btn{
+            width:37.5px;
+          }
+          #Cbtn{
+            width:80px;
+          }
+        </style>
+        <script>
+          var exp='';
+           function InputNum(number){
+              exp = exp+number;
+              document.getElementById('txt').value = exp;
+           }
+           function clearDisplay(){
+              exp ='';
+              document.getElementById('txt').value = exp;
+           }
+           function compute(){
+              var sen = eval(exp);
+              document.getElementById('txt').value = sen;
+           }
+           function abs(){
+              var txt = document.getElementById('txt').value;
+              var txt2=eval(txt);
+              document.getElementById('txt').value = Math.abs(txt2);
+           }
+           function squrt(){
+              var txt = document.getElementById('txt').value;
+              var txt2=eval(txt);
+              document.getElementById('txt').value = Math.sqrt(txt2);
+           }
+        </script>
+    </head>
+    <body>
+      <div id="body">
+      <input type="text" id="txt"><br>
+      <input type="button" value="1" onclick="InputNum('1')" id="btn">
+      <input type="button" value="2" onclick="InputNum('2')" id="btn">
+      <input type="button" value="3" onclick="InputNum('3')" id="btn">
+      <input type="button" value="/" onclick="InputNum('/')" id="btn"><br>
+
+      <input type="button" value="4" onclick="InputNum('4')" id="btn">
+      <input type="button" value="5" onclick="InputNum('5')" id="btn">
+      <input type="button" value="6" onclick="InputNum('6')" id="btn">
+      <input type="button" value="*" onclick="InputNum('*')" id="btn"><br>
+
+      <input type="button" value="7" onclick="InputNum('7')" id="btn">
+      <input type="button" value="8" onclick="InputNum('8')" id="btn">
+      <input type="button" value="9" onclick="InputNum('9')" id="btn">
+      <input type="button" value="-" onclick="InputNum('-')" id="btn"><br>
+
+      <input type="button" value="sqrt" onclick="squrt()" id="btn">
+      <input type="button" value="0" onclick="InputNum('0')" id="btn">
+      <input type="button" value="abs" onclick="abs()" id="btn">
+      <input type="button" value="+" onclick="InputNum('+')" id="btn"><br>
+
+      <input type="button" value="Clear" onclick="clearDisplay()" id="Cbtn">
+      <input type="button" value="Enter" onclick="compute()" id="Cbtn">
+    </div>
+    </body>
+</html>

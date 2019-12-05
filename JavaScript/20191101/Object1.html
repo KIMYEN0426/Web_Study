@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>계좌</h3>
+        <hr>
+        <script>
+            var account = new Object();
+            account.owner = 'kim';
+            account.code = 111;
+            account.balance = 3500;
+            account.deposit=deposit;
+            account.withdraw = withdraw;
+            function deposit(money){
+                this.balance+=money;
+                return this.balance;
+            }
+            function withdraw(money){
+                this.balance-=money;
+                return this.balance;
+            }
+            var result = account.deposit(100);
+            console.log(result);
+            // for(var a in account){
+            //     document.write(account[a]);
+            //     document.write("<br>");
+            // }
+        </script>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 #wrap{}
 #header{height: 325px;background: url("../img/header_bg.jpg") top center repeat-x;}
 #contents{}
-#footer{width: 100%;height: 200px;background: #333;}
+#footer{border-top:1px solid #eee;}
 
 /*스킵 메뉴*/
 #skip{position:absolute;}
@@ -67,18 +67,18 @@
 .ban .next{position:absolute;right:-60px;top:80px;display:inline-block;background:url("../img/icon.png");width:43px; height:43px; background-position: -150px -43px;}
 
 .ban ul{overflow:hidden;}
-.ban ul li{float:left; width:330px;}
+.ban ul li{float:left;width:330px;}
 /* float: left로 줬으면 그 부모에는 항상 overflow:hidden을 준다*/
 .ban ul li .ban_img1{text-align: left;}
 .ban ul li .ban_img2{text-align: center;}
 .ban ul li .ban_img3{text-align: right;}
 
-.ban ul img{display:inline-block;border: 4px solid #dcdcdc;}
+.ban ul img{border: 4px solid #dcdcdc;}
 .ban ul img:hover{border: 4px solid #98dcbd;}
 
 /* 컨텐츠 레이아웃*/
 .cont{overflow:hidden;}
-.cont .column{width:288px;height: 362px; float:left; margin:0 30px 30px 17px; position: relative;}
+.cont .column{width:288px;height: 362px; float:left; margin:0 30px 30px 20px; position: relative;}
 .cont .col1 {border-right: 1px solid #c8c8c8;margin-left:10;}
 .cont .col2 {border-right: 1px solid #c8c8c8;}
 .cont .col3 {border-right: 1px solid #c8c8c8;margin-right:0;}
@@ -154,13 +154,12 @@
 
 /*탭 메뉴*/
 .tab_menu{position:relative;border:1px solid #ccc; padding:8px;height: 105px;}
-.tab_menu h4{}
 .tab_menu ul{overflow:hidden;border-bottom:1px solid #ccc;}
 .tab_menu ul li{float:left;border:1px solid #ccc;margin-right:-1px;margin-bottom:-1px;}
-.tab_menu ul li a{padding:5px;display:block;}
-.tab_menu ul li ul{position: absolute;left:10px;top:50px;width: 270px;border:0;}
-.tab_menu ul li ul li{border:0;background:url("../img/dot.gif") no-repeat 9px 8px; padding-left:18px;float:none;}
-.tab_menu ul li ul li a{overflow:hidden;text-overflow: ellipsis;white-space: nowrap;border:none;font-size: 12px;padding: 0 0 3px 0; width:100%;}
+.tab_menu ul li a{padding:5px;}
+.tab_menu ul li ul{position: absolute;left:10px;top:45px;width: 270px;border:0;}
+.tab_menu ul li ul li{border:none;background:url("../img/dot.gif") no-repeat 5px 8px; padding-left:18px;float:none;}
+.tab_menu ul li ul li a{overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 12px;padding: 0 0 3px 0; width:100%;}
 .tab_menu ul li.active{background:#2c94c4;}
 .tab_menu ul li.active a{color:#fff;}
 .tab_menu ul li.active ul li a{color:#333;}
@@ -172,15 +171,69 @@
     4. width:0 , height:0              */
 
 /*게시판 4*/
-.notice4{}
-.notice4 h4{}
-.notice4 h3 em{}
-.notice4 ul{}
-.notice4 ul li{}
-.notice4 ul li a{}
-.notice4 ul li a span{}
-.notice4 a.more{}
+.notice4{position: relative;}
+.notice4 h4{color:#0093dd;margin:3px;}
+.notice4 h4 em{color:#c45ba9;}
+.notice4 ul{border: 1px solid #ccc;padding:5px;}
+.notice4 ul li{overflow:hidden;background:url("../img/dot.gif") no-repeat 9px 8px; padding-left:18px;}
+.notice4 ul li a{width:70%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 12px;float:left;}
+.notice4 ul li a span{ width:30%;float:right;}
+.notice4 a.more{position: absolute;right:0;top: 0;margin-right:5px;}
 
+/*갤러리*/
+.gallery{border:1px solid #ccc; height:254px;position: relative;overflow: hidden;}
+.gallery h4{color:#0093dd;font-size: 14px;padding:5px;border-bottom: 1px solid #ccc;font-weight: bold;}
+.gallery .gallery_btn{position: absolute;top:4px;right:8px;}
+.gallery .gallery_btn ul{overflow:hidden;}
+.gallery .gallery_btn ul li{float:left;}
+.gallery .gallery_btn ul li a{display:block;width: 23px;height: 23px; background:url(../img/icon.png) no-repeat;}
+
+.gallery .gallery_img{width: 100%;}
+
+.gallery .gallery_btn ul .gb_icon1 a{background-position: -150px -120px;}
+.gallery .gallery_btn ul .gb_icon2 a{background-position: -150px -143px;}
+.gallery .gallery_btn ul .gb_icon3 a{background-position: -150px -166px;}
+.gallery .gallery_btn ul .gb_icon4 a{background-position: -150px -189px;}
+
+.gallery .gallery_btn ul .gb_icon1 a:hover{background-position: -173px -120px;}
+.gallery .gallery_btn ul .gb_icon2 a:hover{background-position: -173px -143px;}
+.gallery .gallery_btn ul .gb_icon3 a:hover{background-position: -173px -166px;}
+.gallery .gallery_btn ul .gb_icon4 a:hover{background-position: -173px -189px;}
+
+/*로그인*/
+#login_form{background: #f2f4f2;padding:15px;}
+.login_header{overflow:hidden;font-size: 12px;height:30px;padding-left:5px;}
+.login_header .lh_check{float:left;padding-right: 15px;}
+.login_header .lh_ip{float:float;}
+.login_header .lh_ip em{color:#0093bd;text-decoration: underline;padding-left:5px;font-style: normal;}
+
+.login_content{position:relative;}
+.login_content .lc_btn{float:right;position: absolute;top:2px;right:0;width: 65px;height: 47px;}
+.login_content .input_text{margin:3px;width: 180px;height:16px;}
+
+.login_footer{margin-top:10px;}
+.login_footer li{display:inline;}
+.login_footer li a{font-size: 12px;}
+
+/*footer*/
+.footer{padding:25px;text-align: center;}
+.footer ul{margin-bottom:2px;}
+.footer ul li{position: relative;display:inline;padding:0 7px;}
+.footer ul li:before{content:'';width: 1px;height: 12px;background:#ccc;position: absolute;left:0;top:2px;}
+.footer ul li:first-child:before{width:0;height:0;}
+
+/*popup*/
+.popup{margin-top:5px;}
+.popup h4{font-size: 14px;color:#0093dd;font-weight: bold;}
+.popup ul{overflow:hidden;}
+.popup ul li{float:left;width:83px;margin-right: 8px;}
+.popup ul img{width:100%;}
+
+/*레이어팝업*/
+#layer{display:none; position:fixed; left:50px; top: 50px;width:700px;height: 496px; border:10px solid #dceff7;box-shadow: 3px 10px rbga(0,0,0,0.4);}
+#layer img{width: 100%;}
+#layer .close{position: absolute;right:20px;top:20px;background:#0093dd;padding:1px 6px; color:#fff;}
+#layer .close:hover{text-decoration: underline;}
 
 
 
