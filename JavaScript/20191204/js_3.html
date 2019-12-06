@@ -7,16 +7,25 @@
 
     </style>
     <script>
+        var files = ['../imge/Jimin2.jpg','../imge/persona.jpg', '../imge/persona_v.jpg', '../imge/persona2.jpg', '../imge/v.jpgg'];
+        var img = new Array();
+        for (var i = 0; i < files.length; i++) {
+            img[i] = new Image();
+            img[i].src = files[i];
+        }
+        var next = 0;
+
         function change() {
-            var files = ['../imge/Lion3.jpg', '../imge/Lion4.jpg', '../imge/Lion5.jpg', '../imge/pompompurin.jpg',
-                '../imge/pompompurin2.jpg'
-            ]
+            var myimg = document.getElementById('myimg');
+            next++;
+            myimg.src = img[next % 5].src;
+            myimg.width=500;
         }
     </script>
 </head>
 
-<body>
-    <img src="../imge/Lion1.jpg" id="myimg" onclick="change()">
+<body onload=''>
+    <img src="../imge/Jimin2.jpg" id="myimg" onclick="change()">
 </body>
 
 </html>
