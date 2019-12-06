@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>radio button</title>
+    <style>
+
+    </style>
+    <script>
+        function check(obj) {
+            var txt = document.getElementById('txt').value;
+            total = parseInt(txt);
+            if (obj.checked == true) {
+                total += parseInt(obj.value);
+            } else {
+                total -= parseInt(obj.value);
+            }
+            document.getElementById('txt').value = total;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>자동계산</h3>
+    <input type='checkbox' value=10000 onclick="check(this)">모자 1만원
+    <input type='checkbox' value=30000 onclick="check(this)">구두 3만원
+    <input type='checkbox' value=80000 onclick="check(this)">명품가방 8만원<br>
+    지불하실 금액
+    <input type="text" id='txt' value=0>
+</body>
+
+</html>
