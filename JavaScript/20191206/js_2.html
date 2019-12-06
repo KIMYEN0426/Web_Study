@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>onfocus/onblur</title>
+    <style>
+
+    </style>
+    <script>
+        function check(obj) {
+            if (obj.value == '') {
+                alert('아이디를 입력해주세요');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>onfocus/onflur</h3>
+    아아디<input type='text' id='txt' onblur='check(this)' autofocus><br>
+    비밀번호<input type='password' id='pw'>
+</body>
+
+</html>
