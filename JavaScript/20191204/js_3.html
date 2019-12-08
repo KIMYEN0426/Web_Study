@@ -2,12 +2,14 @@
 <html>
 
 <head>
-    <title></title>
+    <title>클릭하면 이미지 변경</title>
     <style>
 
     </style>
     <script>
-        var files = ['../imge/Jimin2.jpg','../imge/persona.jpg', '../imge/persona_v.jpg', '../imge/persona2.jpg', '../imge/v.jpgg'];
+        var files = ['../imge/Jimin2.jpg', '../imge/persona.jpg', '../imge/persona_v.jpg', '../imge/persona2.jpg',
+            '../imge/v.jpgg'
+        ];
         var img = new Array();
         for (var i = 0; i < files.length; i++) {
             img[i] = new Image();
@@ -19,7 +21,7 @@
             var myimg = document.getElementById('myimg');
             next++;
             myimg.src = img[next % 5].src;
-            myimg.width=500;
+            myimg.width = 500;
         }
     </script>
 </head>
