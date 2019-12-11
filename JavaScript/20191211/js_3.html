@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+
+    </style>
+    <script>
+        function keyevent() {
+            var code = event.keyCode;
+            switch (code) {
+                case 37:
+                    document.body.style.backgroundColor = 'pink';
+                    break;
+                case 38:
+                    document.body.style.backgroundColor = 'orange';
+                    break;
+                case 39:
+                    document.body.style.backgroundColor = 'yellowgreen';
+                    break;
+                case 40:
+                    document.body.style.backgroundColor = 'skyblue';
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    키이벤트 예제<input type="text" onkeydown="javascript:keyevent()">
+</body>
+
+</html>

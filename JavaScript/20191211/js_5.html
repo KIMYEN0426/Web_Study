@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+
+    </style>
+    <script>
+        function keyevent() {
+            if (event.keyCode == 13) {
+                var txt = eval(document.getElementById('txt').value);
+                document.getElementById('result').value = txt;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    수식을 입력하고, enter을 입력하세요.<br>
+    식<input type="text" id="txt" onkeydown="keyevent()"><br>
+    값<input type="text" id="result">
+</body>
+
+</html>
