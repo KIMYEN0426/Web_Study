@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+
+    </style>
+    <script>
+        var files = ['../imge/apple.jpg', '../imge/banana.jpg', '../imge/mango.jpg'];
+
+        function check() {
+            var myimg = document.getElementById('myimg');
+            var fruits = document.getElementsByName('fruits');
+            for (var i = 0; i < files.length; i++) {
+                if (fruits[i].checked == true) {
+                    myimg.src = files[i];
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>라디오 버튼을 클릭하면 이미지를 출력합니다.</h3>
+    <hr>
+    <input type="radio" name="fruits" value="apple" onchange="check()" checked>사과
+    <input type="radio" name="fruits" value="banana" onchange="check()">바나나
+    <input type="radio" name="fruits" value="mango" onchange="check()">망고
+    <br>
+    <img src="../imge/apple.jpg" id='myimg'>
+</body>
+
+</html>

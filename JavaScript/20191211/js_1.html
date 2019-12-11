@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>checkbox</title>
+    <style>
+
+    </style>
+    <script>
+        var files = ['../imge/apple.jpg', '../imge/banana.jpg', '../imge/mango.jpg'];
+
+        function check() {
+            var myimg = document.getElementById('myimg');
+            var index = document.getElementById('sel');
+            myimg.src = files[index.selectedIndex];
+        }
+    </script>
+</head>
+
+<body>
+    <h3>과일 출력</h3>
+    <hr>
+    과일을 선택하면 이미지가 출력됩니다.
+    <select id='sel' onchange="check()">
+        <option value="딸기">딸기</option>
+        <option value="바나나">바나나</option>
+        <option value="망고">망고</option>
+    </select>
+    <img src='../imge/apple.jpg' id='myimg'>
+</body>
+
+</html>
