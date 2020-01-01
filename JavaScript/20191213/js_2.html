@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #btn {
+            width: 50px;
+            background-color: white;
+        }
+
+        #txt {
+            width: 210px;
+        }
+    </style>
+    <script>
+        function InputNum(num) {
+            var txt = document.getElementById('txt').value;
+            if (txt == '0') txt = '';
+            txt += num;
+            document.getElementById('txt').value = txt;
+        }
+
+        function reset() {
+            document.getElementById('txt').value = '0';
+        }
+
+        function compute() {
+            var txt = eval(document.getElementById('txt').value);
+            document.getElementById('txt').value = txt;
+        }
+
+        function ROOT() {
+            document.getElementById('txt').value = Math.sqrt(document.getElementById('txt').value);
+        }
+
+        function ABS() {
+            document.getElementById('txt').value = Math.abs(document.getElementById('txt').value);
+        }
+
+        function BACK() {
+            var txt = document.getElementById('txt').value;
+            var length = txt.length;
+            document.getElementById('txt').value = txt.substr(0, length - 1);
+        }
+    </script>
+</head>
+
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    <input type="text" id="txt" value=''><br>
+    <table>
+        <tr>
+            <td><input type="button" value="BACK" onclick="BACK()" id="btn"></td>
+            <td><input type="button" value="CE" onclick="reset()" id="btn"></td>
+            <td><input type="button" value="C" onclick="reset()" id="btn"></td>
+            <td><input type="button" value="=" onclick="compute()" id="btn"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="InputNum('7')" id="btn"></td>
+            <td><input type="button" value="8" onclick="InputNum('8')" id="btn"></td>
+            <td><input type="button" value="9" onclick="InputNum('9')" id="btn"></td>
+            <td><input type="button" value="/" onclick="InputNum('/')" id="btn"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="InputNum('4')" id="btn"></td>
+            <td><input type="button" value="5" onclick="InputNum('5')" id="btn"></td>
+            <td><input type="button" value="6" onclick="InputNum('6')" id="btn"></td>
+            <td><input type="button" value="*" onclick="InputNum('*')" id="btn"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="InputNum('1')" id="btn"></td>
+            <td><input type="button" value="2" onclick="InputNum('2')" id="btn"></td>
+            <td><input type="button" value="3" onclick="InputNum('3')" id="btn"></td>
+            <td><input type="button" value="-" onclick="InputNum('-')" id="btn"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="ROOT" onclick="ROOT()" id="btn"></td>
+            <td><input type="button" value="0" onclick="InputNum('0')" id="btn"></td>
+            <td><input type="button" value="ABS" onclick="ABS()" id="btn"></td>
+            <td><input type="button" value="+" onclick="InputNum('+')" id="btn"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
